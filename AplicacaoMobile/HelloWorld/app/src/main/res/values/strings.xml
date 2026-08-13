@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="ola">Olá Android</string>
+    <string name="ciclo">Ciclo de Vida</string>
+    <string name="contador">Contador\n</string>
+    <string name="titulo">Exemplos de Funcionalidade</string>
+</resources>

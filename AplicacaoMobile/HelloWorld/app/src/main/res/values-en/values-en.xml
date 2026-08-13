@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="ola">Hello Android</string>
+    <string name="ciclo">Life Cycle</string>
+    <string name="contador">Counter</string>
+</resources>
