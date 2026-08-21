@@ -1,0 +1,12 @@
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/imagelite
+        username: postgres
+        password: postgres
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+    jpa:
+        database: POSTGRESQL
+        hibernate:
+            ddl-auto: update
+        show-sql: true
