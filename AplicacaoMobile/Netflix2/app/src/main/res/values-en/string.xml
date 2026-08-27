@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Netflix</string>
+    <string name="msg">Hello Teste</string>
+    <string name="ola">Hello Android</string>
+    <string name="ciclo">Cicly Life</string>
+    <string name="contador">Count</string>
+    <string name="titulo">Example of Functionality</string>
+</resources>

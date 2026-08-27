@@ -25,6 +25,7 @@ public class Principal extends AppCompatActivity {
 
         Button btOla = findViewById(R.id.btnOla);
         Button btCiclo = findViewById(R.id.btnCiclo);
+        Button btLinear = findViewById(R.id.btLinear);
 
         btOla.setOnClickListener(v -> {
             Intent rota = new Intent(this, MainActivity.class);
@@ -33,6 +34,11 @@ public class Principal extends AppCompatActivity {
 
         btCiclo.setOnClickListener(v -> {
             Intent rota = new Intent(this, CicloDeVida.class);
+            startActivity(rota);
+        });
+
+        btLinear.setOnClickListener(v -> {
+            Intent rota = new Intent(this, LinearLayout.class);
             startActivity(rota);
         });
 

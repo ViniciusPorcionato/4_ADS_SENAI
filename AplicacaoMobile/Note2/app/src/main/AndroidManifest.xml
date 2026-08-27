@@ -10,21 +10,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HelloWorld">
-        <activity
-            android:name=".Chains"
-            android:exported="false" />
-        <activity
-            android:name=".LinearLayout"
-            android:exported="false" />
-        <activity
-            android:name=".CicloDeVida"
-            android:exported="false" />
+        android:theme="@style/Theme.Note">
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Principal"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
