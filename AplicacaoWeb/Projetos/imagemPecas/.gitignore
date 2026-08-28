@@ -32,5 +32,6 @@ build/
 ### VS Code ###
 .vscode/
 
-### PostgreSQL data volume ###
-data/
+### PASTA DO BANCO DE DADOS ###
+/data2
+/data

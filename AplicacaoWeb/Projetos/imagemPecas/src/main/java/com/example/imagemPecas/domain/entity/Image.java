@@ -1,4 +1,5 @@
 package com.example.imagemPecas.domain.entity;
+
 import com.example.imagemPecas.domain.enums.ImageExtension;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -37,5 +38,3 @@ public class Image {
     @Lob
     private byte[] file;
 }
-
-
