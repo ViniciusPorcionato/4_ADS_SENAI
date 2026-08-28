@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#080A12"
+    android:padding="20dp">
+
+    <!-- Cabeçalho simples -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icone_tv" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem-vindo!"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha qual aplicativo você deseja usar"
+        android:textColor="#B0B0B0"
+        android:textSize="14sp"
+        android:layout_marginTop="6dp" />
+
+    <!-- Card HBO (simples) -->
+    <LinearLayout
+        android:id="@+id/card_hbo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_hbo_bg"
+        android:padding="16dp"
+        android:layout_marginTop="22dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/logo_hbo_img"
+            android:layout_width="120dp"
+            android:layout_height="64dp"
+            android:src="@drawable/logo_hbo"
+            android:contentDescription="Logo HBO"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/hbo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HBO"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/hbo_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filmes, séries e conteúdo exclusivo"
+            android:textColor="#B0B0B0"
+            android:textSize="13sp"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:id="@+id/btn_hbo_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vamos lá"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#8A5FFF"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <!-- Card Netflix (simples) -->
+    <LinearLayout
+        android:id="@+id/card_netflix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_netflix_bg"
+        android:padding="16dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/logo_netflix_img"
+            android:layout_width="120dp"
+            android:layout_height="64dp"
+            android:src="@drawable/logo_netflix"
+            android:contentDescription="Logo Netflix"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/netflix_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Netflix"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/netflix_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filmes, séries e conteúdo original"
+            android:textColor="#B0B0B0"
+            android:textSize="13sp"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:id="@+id/btn_netflix_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vamos lá"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#E50914"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <!-- Rodapé simples -->
+
+    <TextView
+        android:id="@+id/footer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entretenimento do seu jeito"
+        android:textColor="#9BA0B2"
+        android:textSize="12sp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="12dp" />
+
+</LinearLayout>
