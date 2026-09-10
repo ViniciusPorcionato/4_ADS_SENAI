@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rango na Régua-Start</string>
+
+    <string name="menu_ver_grade">Ver em grade</string>
+    <string name="menu_ver_lista">Ver em lista</string>
+    <string name="menu_filtrar">Filtrar categoria</string>
+    <string name="menu_previa">Prévia da semana 6</string>
+
+    <string name="vazio_titulo">Nenhum lugar no ranking ainda</string>
+    <string name="vazio_texto">Toque no + e indique aquele lugar que você já defendeu no grupo da turma.</string>
+
+    <string name="novo_titulo">Indicar um lugar</string>
+    <string name="hint_nome">Nome do lugar</string>
+    <string name="hint_categoria">Categoria (lanche, almoço, café…)</string>
+    <string name="hint_preco">Preço médio em reais</string>
+    <string name="hint_observacao">Por que vale a pena?</string>
+    <string name="salvar">Salvar no ranking</string>
+
+    <string name="erro_nome">Diga pelo menos o nome do lugar</string>
+    <string name="erro_categoria">Informe uma categoria</string>
+    <string name="erro_preco">Use apenas números, algo como 18,50</string>
+
+    <string name="detalhe_titulo">Detalhe do lugar</string>
+    <string name="sem_observacao">Ninguém escreveu nada sobre este lugar ainda.</string>
+    <string name="rotulo_categoria">Categoria</string>
+    <string name="rotulo_preco">Preço médio</string>
+    <string name="rotulo_votos">Votos da turma</string>
+
+    <string name="previa_titulo">Quando cai o próximo feriado?</string>
+    <string name="previa_aviso">Prévia da semana 6: estes dados vêm de uma API pública, não do celular.</string>
+    <string name="erro_rede">Não deu para buscar os feriados: %1$s</string>
+    <string name="tentar_novamente">Tentar de novo</string>
+
+    <string name="votar">Votar</string>
+    <string name="lider">Líder do ranking</string>
+</resources>

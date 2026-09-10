@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-debug-42:\\drawable_fundo_selo.xml.flat",
+        "source": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-main-44:\\drawable\\fundo_selo.xml"
+    },
+    {
+        "merged": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-debug-42:\\layout_item_lider.xml.flat",
+        "source": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-main-44:\\layout\\item_lider.xml"
+    },
+    {
+        "merged": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-debug-42:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-main-44:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-debug-42:\\layout_activity_main2.xml.flat",
+        "source": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-main-44:\\layout\\activity_main2.xml"
+    },
+    {
+        "merged": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-debug-42:\\drawable_bg_button_secondary.xml.flat",
+        "source": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-main-44:\\drawable\\bg_button_secondary.xml"
+    },
+    {
+        "merged": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-debug-42:\\drawable_bg_input.xml.flat",
+        "source": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-main-44:\\drawable\\bg_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-debug-42:\\drawable_ic_lancador.xml.flat",
+        "source": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-main-44:\\drawable\\ic_lancador.xml"
+    },
+    {
+        "merged": "br.edu.unisenai.rangonaregua.app-debug-42:/layout_activity_login.xml.flat",
+        "source": "br.edu.unisenai.rangonaregua.app-main-44:/layout/activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-debug-42:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-main-44:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-debug-42:\\layout_activity_detalhe.xml.flat",
+        "source": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-main-44:\\layout\\activity_detalhe.xml"
+    },
+    {
+        "merged": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-debug-42:\\drawable_bg_button_primary.xml.flat",
+        "source": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-main-44:\\drawable\\bg_button_primary.xml"
+    },
+    {
+        "merged": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-debug-42:\\drawable_fundo_posicao.xml.flat",
+        "source": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-main-44:\\drawable\\fundo_posicao.xml"
+    },
+    {
+        "merged": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-debug-42:\\layout_activity_novo_lugar.xml.flat",
+        "source": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-main-44:\\layout\\activity_novo_lugar.xml"
+    },
+    {
+        "merged": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-debug-42:\\layout_item_lugar.xml.flat",
+        "source": "C:\\Users\\25170641\\.gradle\\daemon\\9.1.0\\br.edu.unisenai.rangonaregua.app-main-44:\\layout\\item_lugar.xml"
+    }
+]

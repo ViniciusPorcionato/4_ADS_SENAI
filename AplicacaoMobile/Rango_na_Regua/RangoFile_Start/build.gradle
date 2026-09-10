@@ -1,0 +1,4 @@
+// Build script raiz. Nada de especial aqui.
+plugins {
+    id 'com.android.application' version '9.0.1' apply false
+}

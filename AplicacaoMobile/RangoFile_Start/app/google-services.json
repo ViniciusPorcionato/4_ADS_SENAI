@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "993242806055",
+    "project_id": "rangotb-vinicius",
+    "storage_bucket": "rangotb-vinicius.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993242806055:android:6d97ca9f9d6c1320c45b02",
+        "android_client_info": {
+          "package_name": "br.edu.unisenai.rangonaregua"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArq-8bnvboXU7dz6uAv8XK-Lqftl11g4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
