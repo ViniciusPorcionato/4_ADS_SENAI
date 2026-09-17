@@ -8,12 +8,16 @@ color texto_suave
 color verde_android
 color verde_cartao
 color verde_escuro
+drawable baseline_exit_to_app_24
 drawable bg_input
 drawable fundo_posicao
 drawable fundo_selo
 drawable ic_lancador
+id acaoConta
 id btCriarConta
 id btEntrar
+id btGoogle
+id btRecuperar
 id btnSalvar
 id btnVotar
 id btnVotarLider
@@ -57,7 +61,9 @@ layout activity_main2
 layout activity_novo_lugar
 layout item_lider
 layout item_lugar
+menu menu_principal
 string app_name
+string default_web_client_id
 string detalhe_titulo
 string erro_categoria
 string erro_nome
@@ -76,6 +82,8 @@ string lider
 string login_criar_conta
 string login_email
 string login_entrar
+string login_google
+string login_recuperar_senha
 string login_senha
 string login_subtitulo
 string login_titulo

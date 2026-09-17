@@ -89,6 +89,28 @@
             android:textColor="@color/verde_android"
             android:textSize="16sp"
             android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btRecuperar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/login_recuperar_senha"
+            android:textAllCaps="false"
+            android:textColor="@color/branco"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/login_google"
+            android:textAllCaps="false"
+            android:textColor="@color/branco"
+            android:textSize="16sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </LinearLayout>

@@ -9,6 +9,7 @@
     <color name="verde_cartao">#17402B</color>
     <color name="verde_escuro">#0E2A1B</color>
     <string name="app_name">Rango na Régua-Start</string>
+    <string name="default_web_client_id" translatable="false">993242806055-s7uilpv3knf5ok4kf9m5bhsjgs5e6sum.apps.googleusercontent.com</string>
     <string name="detalhe_titulo">Detalhe do lugar</string>
     <string name="erro_categoria">Informe uma categoria</string>
     <string name="erro_nome">Diga pelo menos o nome do lugar</string>
@@ -27,6 +28,8 @@
     <string name="login_criar_conta">CRIAR CONTA</string>
     <string name="login_email">E-mail</string>
     <string name="login_entrar">ENTRAR</string>
+    <string name="login_google">ENTRAR COM O GOOGLE</string>
+    <string name="login_recuperar_senha">ESQUECI MINHA SENHA</string>
     <string name="login_senha">Senha</string>
     <string name="login_subtitulo">Entre para montar o seu ranking brabo!</string>
     <string name="login_titulo">Rango na Régua</string>

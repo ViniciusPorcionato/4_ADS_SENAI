@@ -7,6 +7,8 @@
     <string name="login_senha">Senha</string>
     <string name="login_entrar">ENTRAR</string>
     <string name="login_criar_conta">CRIAR CONTA</string>
+    <string name="login_recuperar_senha">ESQUECI MINHA SENHA</string>
+    <string name="login_google">ENTRAR COM O GOOGLE</string>
 
     <string name="menu_ver_grade">Ver em grade</string>
     <string name="menu_ver_lista">Ver em lista</string>

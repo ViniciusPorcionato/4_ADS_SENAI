@@ -6,12 +6,16 @@ int color texto_suave 0x0
 int color verde_android 0x0
 int color verde_cartao 0x0
 int color verde_escuro 0x0
+int drawable baseline_exit_to_app_24 0x0
 int drawable bg_input 0x0
 int drawable fundo_posicao 0x0
 int drawable fundo_selo 0x0
 int drawable ic_lancador 0x0
+int id acaoConta 0x0
 int id btCriarConta 0x0
 int id btEntrar 0x0
+int id btGoogle 0x0
+int id btRecuperar 0x0
 int id btnSalvar 0x0
 int id btnVotar 0x0
 int id btnVotarLider 0x0
@@ -55,7 +59,9 @@ int layout activity_main2 0x0
 int layout activity_novo_lugar 0x0
 int layout item_lider 0x0
 int layout item_lugar 0x0
+int menu menu_principal 0x0
 int string app_name 0x0
+int string default_web_client_id 0x0
 int string detalhe_titulo 0x0
 int string erro_categoria 0x0
 int string erro_nome 0x0
@@ -74,6 +80,8 @@ int string lider 0x0
 int string login_criar_conta 0x0
 int string login_email 0x0
 int string login_entrar 0x0
+int string login_google 0x0
+int string login_recuperar_senha 0x0
 int string login_senha 0x0
 int string login_subtitulo 0x0
 int string login_titulo 0x0
