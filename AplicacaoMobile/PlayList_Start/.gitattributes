@@ -1,0 +1,16 @@
+# Impede que o Git converta LF em CRLF nos arquivos de regra ao clonar no Windows.
+# Sem isso, a verificacao de hash acusa alteracao em todas as entregas feitas em Windows.
+
+CLAUDE.md          -text
+AGENTS.md          -text
+GEMINI.md          -text
+.windsurfrules     -text
+.ai-rules.sha256   -text
+
+.github/copilot-instructions.md   -text
+.junie/guidelines.md              -text
+.cursor/rules/modo-estudo.mdc     -text
+.clinerules/modo-estudo.md        -text
+.roo/rules/modo-estudo.md         -text
+.continue/rules/modo-estudo.md    -text
+.amazonq/rules/modo-estudo.md     -text

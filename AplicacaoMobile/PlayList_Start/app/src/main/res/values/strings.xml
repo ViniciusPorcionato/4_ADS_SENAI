@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Play List</string>
+    <string name="titulo_playlist">Playlist da Turma</string>
+    <string name="playlist_vazia">Nenhuma música ainda.\nToque no + para indicar a primeira.</string>
+    <string name="titulo_nome_usuario">Quem é você?</string>
+    <string name="mensagem_nome_usuario">Vai aparecer do lado das músicas que você indicar.</string>
+    <string name="dica_nome_usuario">Seu nome</string>
+    <string name="nome_usuario_obrigatorio">Digite seu nome</string>
+    <string name="boas_vindas_usuario">Bem-vindo(a) %1$s</string>
+    <string name="titulo_indicar_musica">Indicar música</string>
+    <string name="dica_titulo_musica">Título da música</string>
+    <string name="dica_artista_musica">Nome do artista</string>
+    <string name="campos_musica_obrigatorios">Preencha título e artista</string>
+    <string name="musica_indicada_por">indicada por %1$s</string>
+    <string name="aviso_dono_musica">Essa música é de %1$s</string>
+    <string name="pergunta_excluir_musica">Tirar \"%1$s\" da playlist?</string>
+    <string name="musica_removida">Música removida</string>
+    <string name="erro_carregar_playlist">Não foi possível carregar a playlist</string>
+    <string name="erro_adicionar_musica">Não foi possível adicionar a música</string>
+    <string name="erro_votar_musica">Não foi possível registrar o voto</string>
+    <string name="erro_excluir_musica">Não foi possível excluir a música</string>
+    <string name="pronto">Pronto</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="votar">Votar</string>
+    <string name="excluir">Excluir</string>
+    <string name="nao">Não</string>
+</resources>

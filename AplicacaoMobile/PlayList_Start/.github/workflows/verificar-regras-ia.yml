@@ -1,0 +1,52 @@
+name: Verificar regras de IA
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  integridade:
+    name: Integridade dos arquivos de regra
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Conferir o manifesto
+        run: |
+          MANIFESTO_ESPERADO="33cdd95ff42f974a30b38add0e2be80134b1a854ab89da7a13c13a51dea6caf3"
+
+          if [ ! -f .ai-rules.sha256 ]; then
+            echo "::error::O arquivo .ai-rules.sha256 foi removido do projeto."
+            exit 1
+          fi
+
+          ATUAL=$(sha256sum .ai-rules.sha256 | cut -d' ' -f1)
+          if [ "$ATUAL" != "$MANIFESTO_ESPERADO" ]; then
+            echo "::error file=.ai-rules.sha256::O manifesto de regras foi alterado."
+            exit 1
+          fi
+
+          echo "Manifesto intacto."
+
+      - name: Conferir se os arquivos existem
+        run: |
+          falta=0
+          while read -r _ arquivo; do
+            [ -z "$arquivo" ] && continue
+            if [ ! -f "$arquivo" ]; then
+              echo "::error::Arquivo de regra removido: $arquivo"
+              falta=1
+            fi
+          done < .ai-rules.sha256
+          [ "$falta" -eq 0 ]
+
+      - name: Conferir o conteúdo
+        run: |
+          if sha256sum -c .ai-rules.sha256; then
+            echo "Regras de IA intactas. Modo estudo ativo."
+          else
+            echo "::error::Um ou mais arquivos de regra foram alterados. Restaure a versão original do repositório-modelo antes de entregar."
+            exit 1
+          fi
