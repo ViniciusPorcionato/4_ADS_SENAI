@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NEXORA — catálogo de imagens de peças
 
-## Getting Started
+Frontend em Next.js, React e TypeScript implementado a partir do arquivo Figma:
+https://www.figma.com/design/wwl7m0jGLGjSBxFOCfQTlE/Untitled?node-id=0-1
 
-First, run the development server:
+## Executar
+
+Execute os comandos dentro da pasta `imagempecasfront`:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra http://localhost:3000. Para conferir as seis imagens originais do Figma sem iniciar o backend, abra http://localhost:3000/Galeria?demo=1. A demonstração é identificada na tela e não grava dados.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Rotas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/` e `/login`: layout de login e validação dos campos.
+- `/cadastro`: layout de cadastro, validação de nome, e-mail, senha e confirmação.
+- `/Galeria`: galeria conectada ao backend, busca por nome/tag e filtro PNG/JPEG/GIF.
+- `/Galeria?demo=1`: exemplos do Figma, busca local e visualização ampliada.
+- `/Formulario`: upload com seleção/arrastar arquivo, prévia, validação e progresso.
 
-## Learn More
+As URLs existentes `/Galeria` e `/Formulario` foram preservadas. Imagens abrem em um visualizador acessível com download, fechamento por Escape e retorno de foco.
 
-To learn more about Next.js, take a look at the following resources:
+## Backend
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+O frontend usa o backend Spring Boot `imagemPecasBack` em `http://localhost:8080` por padrão. Para alterar, copie `.env.example` para `.env.local`, configure `IMAGES_API_URL` e reinicie o Next.js.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+As rotas do Next.js intermediam os endpoints existentes, evitando depender de CORS no navegador:
 
-## Deploy on Vercel
+- `GET /api/images` → `GET /v1/images?query=...&extension=...`
+- `POST /api/images` → `POST /v1/images` com multipart `name`, `tags` e `file`
+- `GET /api/images/:id` → `GET /v1/images/:id`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+O formulário aceita PNG, JPEG e GIF até 4 MiB, com nome e tags de até 50 caracteres, conforme o Figma. Validação no cliente e no servidor; o servidor também verifica a assinatura do arquivo. A confirmação só aparece após resposta bem-sucedida do backend. O progresso indica envio ao Next.js; ao chegar a 100%, a interface aguarda a gravação no backend.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O DTO atual do backend não retorna tags. A galeria aceita esse campo quando disponível, mas não inventa tags para registros reais; a busca por tags continua sendo feita pelo backend.
+
+**Autenticação pendente no backend:** o projeto Java atual não possui endpoints de login/cadastro nem sessões. As telas foram implementadas com validação e aviso de indisponibilidade; não salvam nem enviam senhas e não simulam autenticação. A galeria permanece pública, como a API atual. O botão de saída retorna à tela de acesso. Para autenticação real será necessário implementar o serviço e proteger os endpoints no backend.
+
+## Design
+
+- Inter, pesos 400/500/600/700.
+- Fundo `#f5f6f8`, superfície branca, texto `#1a1d21`, secundário `#6b7280`, azul `#1e6fd9`, azul escuro `#0d2b4e`.
+- Cabeçalho de 69 px, margens de 40 px, grade de três colunas com espaçamento de 24 px; duas colunas em tablet e uma no celular.
+- Cartão de login de 420 px, cadastro de 460 px e formulário de 640 px.
+- Imagens e ícones originais baixados em `public/design`; nenhuma URL temporária do Figma é usada em execução.
+- Os estados de erro, carregamento e sucesso são estados dos componentes, não páginas fictícias separadas.
+- A imagem ampliada e a prévia sempre mostram o arquivo escolhido, mesmo que o mockup apresente outra foto de exemplo.
+
+## Verificar
+
+```bash
+npm run lint
+npm run build
+npm run test:integration
+```
+
+O teste de integração requer um build pronto. Ele inicia temporariamente o Next.js e um servidor de teste em portas livres, confere busca, multipart, validações, gravação, leitura da imagem e erro do serviço. Não usa o banco de dados real. O backend real precisa estar ativo com seu PostgreSQL para usar o catálogo persistente.
